@@ -1,356 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>KOKI VFX & 3D - Premium Digital Assets</title>
-    <meta name="description" content="Download premium 3D models, VFX assets, templates, plugins, and digital assets from KOKI VFX & 3D">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOKI VFX & 3D</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- LEFT SIDEBAR (CATEGORIES) -->
-        <aside class="left-sidebar">
-            <div class="sidebar-header">
-                <h3>KOKI<span>VFX & 3D</span></h3>
-                <p class="tagline">Premium VFX & 3D Assets</p>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <aside class="left-sidebar">
+      <div class="sidebar-header">
+        <h3>KOKI<span>VFX & 3D</span></h3>
+        <p class="tagline">Premium VFX & 3D Assets</p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul class="sidebar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Membership/membership.html">Membership</a></li>
+
+          <!-- Blender Dropdown -->
+          <li class="dropdown-item">
+            <a href="#" class="dropdown-toggle" onclick="toggleSubmenu(event)">
+              Blender
+              <i class="fas fa-chevron-right chevron"></i>
+            </a>
+            <ul class="submenu">
+              <li><a href="Blender/blender-addons.html">Add-ons</a></li>
+              <li><a href="Blender/blender-assets.html">Assets</a></li>
+              <li><a href="Blender/blender-3d.html">3D Models</a></li>
+            </ul>
+          </li>
+
+          <!-- Unreal Dropdown -->
+          <li class="dropdown-item">
+            <a href="#" class="dropdown-toggle" onclick="toggleSubmenu(event)">
+              Unreal
+              <i class="fas fa-chevron-right chevron"></i>
+            </a>
+            <ul class="submenu">
+              <li><a href="Unreal/unreal-plugins.html">Plugins</a></li>
+              <li><a href="Unreal/unreal-assets.html">Assets</a></li>
+              <li><a href="Unreal/unreal-3d.html">3D Models</a></li>
+            </ul>
+          </li>
+
+          <!-- After Effects Dropdown -->
+          <li class="dropdown-item">
+            <a href="#" class="dropdown-toggle" onclick="toggleSubmenu(event)">
+              After Effects
+              <i class="fas fa-chevron-right chevron"></i>
+            </a>
+            <ul class="submenu">
+              <li><a href="ae/ae-templates.html">Templates</a></li>
+              <li><a href="ae/ae-presets.html">Presets</a></li>
+              <li><a href="ae/ae-assets.html">Assets</a></li>
+            </ul>
+          </li>
+
+          <!-- Premiere Pro Dropdown -->
+          <li class="dropdown-item">
+            <a href="#" class="dropdown-toggle" onclick="toggleSubmenu(event)">
+              Premiere Pro
+              <i class="fas fa-chevron-right chevron"></i>
+            </a>
+            <ul class="submenu">
+              <li><a href="pr/pp-templates.html">Templates</a></li>
+              <li><a href="pr/pp-presets.html">Presets</a></li>
+              <li><a href="pr/pp-assets.html">Assets</a></li>
+            </ul>
+          </li>
+
+          <!-- Photoshop Dropdown -->
+          <li class="dropdown-item">
+            <a href="#" class="dropdown-toggle" onclick="toggleSubmenu(event)">
+              Photoshop
+              <i class="fas fa-chevron-right chevron"></i>
+            </a>
+            <ul class="submenu">
+              <li><a href="ps/psd-templates.html">PSD Templates</a></li>
+              <li><a href="ps/ps-brushes.html">Brushes</a></li>
+              <li><a href="ps/ps-actions.html">Actions</a></li>
+            </ul>
+          </li>
+
+          <!-- Houdini Single Item -->
+          <li>
+            <a href="Houdini/houdini.html">
+              Houdini
+            </a>
+          </li>
+
+          <!-- Website Templates Single Item -->
+          <li>
+            <a href="web template/website-templates.html">
+              Website Templates
+            </a>
+          </li>
+
+          <!-- Software Single Item -->
+          <li>
+            <a href="Softwear/software.html">
+              Software
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div id="homePage">
+          <!-- Main Horizontal Slideshow -->
+          <div class="slideshow-container main-slideshow">
+            <div class="slide fade">
+              <img src="backgrounds/IMG_2254.JPG" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+              <img src="backgrounds/IMG_2256.JPG" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+              <img src="backgrounds/theme.jpg" alt="Slide 3">
+            </div>
+          </div>
+
+          <!-- Bottom Two Slideshows -->
+          <div class="bottom-slideshows">
+            <!-- Left Slideshow -->
+            <div class="slideshow-container small-slideshow" id="leftSlideshow">
+              <div class="slide-small fade-small">
+                <img src="backgrounds/IMG_2254.JPG" alt="Left Slide 1">
+              </div>
+              <div class="slide-small fade-small">
+                <img src="backgrounds/IMG_2256.JPG" alt="Left Slide 2">
+              </div>
+              <div class="slide-small fade-small">
+                <img src="backgrounds/theme.jpg" alt="Left Slide 3">
+              </div>
             </div>
 
-            <nav class="sidebar-nav">
-                <ul class="sidebar-menu">
-                    <li><a href="#" onclick="loadHome()"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
-
-                    <!-- 3D MODELS DROPDOWN (4 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-cube"></i> 3D Models
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('all-3d-models')"><i class="fas fa-box"></i> All 3D
-                                    Models</a></li>
-                            <li><a href="#" onclick="loadCategory('characters-3d')"><i class="fas fa-user"></i>
-                                    Characters</a></li>
-                            <li><a href="#" onclick="loadCategory('vehicles-3d')"><i class="fas fa-car"></i>
-                                    Vehicles</a></li>
-                            <li><a href="#" onclick="loadCategory('architecture-3d')"><i class="fas fa-building"></i>
-                                    Architecture</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- GAME DEVELOPMENT DROPDOWN (3 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-gamepad"></i> Game Development
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('game-dev-all')"><i class="fas fa-star"></i> Game Dev
-                                    Assets</a></li>
-                            <li><a href="#" onclick="loadCategory('ue5')"><i class="fab fa-unreal"></i> Unreal
-                                    Engine</a></li>
-                            <li><a href="#" onclick="loadCategory('unity')"><i class="fab fa-unity"></i> Unity
-                                    Assets</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- BLENDER ADD-ONS DROPDOWN (4 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-wand-magic-sparkles"></i> Blender Add-ons
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('blender-all')"><i class="fas fa-box"></i> All
-                                    Add-ons</a></li>
-                            <li><a href="#" onclick="loadCategory('modeling')"><i class="fas fa-cube"></i> Modeling
-                                    Tools</a></li>
-                            <li><a href="#" onclick="loadCategory('rendering')"><i class="fas fa-image"></i>
-                                    Rendering</a></li>
-                            <li><a href="#" onclick="loadCategory('animation')"><i class="fas fa-film"></i>
-                                    Animation</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- VIDEO TOOLS DROPDOWN (4 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-video"></i> Video Tools
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('video-tools-all')"><i class="fas fa-star"></i> All
-                                    Tools</a></li>
-                            <li><a href="#" onclick="loadCategory('ae')"><i class="fab fa-adobe"></i> After Effects</a>
-                            </li>
-                            <li><a href="#" onclick="loadCategory('premiere')"><i class="fab fa-adobe"></i> Premiere
-                                    Pro</a></li>
-                            <li><a href="#" onclick="loadCategory('vfx')"><i class="fas fa-wand-magic-sparkles"></i>
-                                    VFX</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#" onclick="loadCategory('stock-images')"><i class="fas fa-image"></i> Stock Images</a>
-                    </li>
-                    <li><a href="#" onclick="loadCategory('vectors')"><i class="fas fa-vector-square"></i> Stock
-                            Vectors</a></li>
-                    <li><a href="#" onclick="loadCategory('tshirts')"><i class="fas fa-shirt"></i> T-Shirts Prints</a>
-                    </li>
-                    <li><a href="#" onclick="loadCategory('characters')"><i class="fas fa-user"></i> Characters</a></li>
-
-                    <!-- COMICS DROPDOWN (3 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-book"></i> Comics
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('comics-all')"><i class="fas fa-star"></i> All
-                                    Comics</a></li>
-                            <li><a href="#" onclick="loadCategory('manga')"><i class="fas fa-book-open"></i> Manga</a>
-                            </li>
-                            <li><a href="#" onclick="loadCategory('webcomics')"><i class="fas fa-globe"></i> Web
-                                    Comics</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#" onclick="loadCategory('fonts')"><i class="fas fa-font"></i> Fonts</a></li>
-                    <li><a href="#" onclick="loadCategory('mockup')"><i class="fas fa-desktop"></i> Mock Up</a></li>
-                    <li><a href="#" onclick="loadCategory('photoshop')"><i class="fab fa-adobe"></i> Photoshop</a></li>
-                    <li><a href="#" onclick="loadCategory('brushes')"><i class="fas fa-brush"></i> Brushes</a></li>
-
-                    <!-- LAYERED *.PSD DROPDOWN (3 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-layer-group"></i> Layered *.PSD
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('psd-all')"><i class="fas fa-star"></i> All PSD
-                                    Files</a></li>
-                            <li><a href="#" onclick="loadCategory('designs')"><i class="fas fa-palette"></i> Design
-                                    Templates</a></li>
-                            <li><a href="#" onclick="loadCategory('ui-kits')"><i class="fas fa-sliders"></i> UI Kits</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- ACTIONS *.ATN DROPDOWN (3 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-magic"></i> Actions *.ATN
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('actions-all')"><i class="fas fa-star"></i> All
-                                    Actions</a></li>
-                            <li><a href="#" onclick="loadCategory('effects')"><i class="fas fa-sparkles"></i>
-                                    Effects</a></li>
-                            <li><a href="#" onclick="loadCategory('filters')"><i class="fas fa-water"></i> Filters</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- STYLES *.ASL DROPDOWN (3 sub-items) -->
-                    <li class="dropdown-item">
-                        <a href="#" onclick="toggleSubmenu(event)" class="dropdown-toggle">
-                            <i class="fas fa-palette"></i> Styles *.ASL
-                            <i class="fas fa-chevron-right chevron"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="loadCategory('styles-all')"><i class="fas fa-star"></i> All
-                                    Styles</a></li>
-                            <li><a href="#" onclick="loadCategory('gradients')"><i class="fas fa-square-full"></i>
-                                    Gradients</a></li>
-                            <li><a href="#" onclick="loadCategory('patterns')"><i class="fas fa-shapes"></i>
-                                    Patterns</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#" onclick="loadCategory('web-templates')"><i class="fas fa-code"></i> Web
-                            Templates</a></li>
-                    <li><a href="#" onclick="loadCategory('audio')"><i class="fas fa-music"></i> AudioJungle</a></li>
-                    <li><a href="#" onclick="loadCategory('stock-video')"><i class="fas fa-film"></i> Stock Video</a>
-                    </li>
-                    <li><a href="#" onclick="loadCategory('footages')"><i class="fas fa-video"></i> Footages</a></li>
-                    <li><a href="#" onclick="loadCategory('tutorials')"><i class="fas fa-graduation-cap"></i>
-                            Tutorials</a></li>
-                    <li><a href="#" onclick="loadCategory('ebooks')"><i class="fas fa-book-open"></i> E-Books</a></li>
-                    <li><a href="#" onclick="loadCategory('magazines')"><i class="fas fa-magazine"></i> Magazines</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-
-        <!-- MAIN CONTENT -->
-        <div class="main-wrapper">
-            <!-- Header -->
-            <header class="header">
-                <div class="container">
-                    <div class="header-content">
-                        <div class="logo">
-                            <h1>KOKI<span>VFX & 3D</span></h1>
-                            <p class="tagline">Premium VFX & 3D Assets</p>
-                        </div>
-                        <nav class="main-nav">
-                            <button class="nav-toggle" aria-label="Toggle navigation">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                            <ul class="nav-menu" id="navMenu">
-                                <li><a href="#" onclick="loadHome()">Home</a></li>
-                                <li><a href="#" onclick="loadCategory('all')">All Products</a></li>
-                                <li class="dropdown">
-                                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" onclick="loadCategory('3d-models')">3D Models</a></li>
-                                        <li><a href="#" onclick="loadCategory('blender')">Blender</a></li>
-                                        <li><a href="#" onclick="loadCategory('game-dev')">Game Dev</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="search-box">
-                            <input type="text" placeholder="Search..." id="searchInput">
-                            <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Main Content -->
-            <main class="main-content">
-                <div class="container">
-                    <!-- Homepage -->
-                    <div id="homePage">
-                        <section class="featured-section">
-                            <h2 class="section-title">Latest Uploads</h2>
-                            <div class="products-grid" id="productsGrid">
-                                <!-- Products loaded by JavaScript -->
-                            </div>
-                        </section>
-
-                        <!-- Pagination -->
-                        <div class="pagination">
-                            <button class="page-btn" id="prevBtn" onclick="previousPage()"><i
-                                    class="fas fa-chevron-left"></i> Previous</button>
-                            <div class="page-numbers" id="pageNumbers"></div>
-                            <button class="page-btn" id="nextBtn" onclick="nextPage()">Next <i
-                                    class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-
-                    <!-- Product Detail Page -->
-                    <div id="productPage" class="hidden">
-                        <div class="breadcrumb">
-                            <a href="#" onclick="loadHome()">Home</a> <span>/</span>
-                            <a href="#" id="productCategoryLink" onclick="loadCategory('')">Category</a> <span>/</span>
-                            <span id="productPageName">Product</span>
-                        </div>
-
-                        <div class="product-details">
-                            <div class="product-image">
-                                <img src="" alt="Product" id="mainProductImage">
-                            </div>
-
-                            <div class="product-info">
-                                <h1 id="productTitle">Product Title</h1>
-                                <div class="product-meta">
-                                    <span><i class="fas fa-folder"></i> <span id="productCat"></span></span>
-                                    <span><i class="fas fa-eye"></i> <span id="productViews">0</span> views</span>
-                                    <span><i class="fas fa-calendar"></i> <span id="productDate"></span></span>
-                                </div>
-
-                                <div class="product-description">
-                                    <h3>Description</h3>
-                                    <p id="productDesc"></p>
-                                </div>
-
-                                <div class="product-specs">
-                                    <h3>File Information</h3>
-                                    <ul id="productSpecs">
-                                        <li><strong>File Format:</strong> <span id="fileFormat"></span></li>
-                                        <li><strong>File Size:</strong> <span id="fileSize"></span></li>
-                                    </ul>
-                                </div>
-
-                                <div class="download-section">
-                                    <h3>Download Links</h3>
-                                    <div class="download-buttons" id="downloadButtons"></div>
-                                </div>
-
-                                <div class="share-section">
-                                    <h4>Share:</h4>
-                                    <div class="share-buttons">
-                                        <a href="#" class="share-btn facebook" title="Share on Facebook"><i
-                                                class="fab fa-facebook"></i></a>
-                                        <a href="#" class="share-btn twitter" title="Share on Twitter"><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a href="#" class="share-btn pinterest" title="Share on Pinterest"><i
-                                                class="fab fa-pinterest"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <section class="featured-section" style="margin-top: 60px;">
-                            <h2 class="section-title">Related Products</h2>
-                            <div class="products-grid" id="relatedProducts"></div>
-                        </section>
-
-                        <div style="text-align: center; margin-top: 30px;">
-                            <button class="page-btn" onclick="loadHome()" style="padding: 15px 40px; font-size: 16px;">
-                                <i class="fas fa-arrow-left"></i> Back to Home
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </main>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-column">
-                            <h4>About Us</h4>
-                            <p>KOKI VFX & 3D is your premium marketplace for digital assets including 3D models, VFX assets, plugins, templates, and more.</p>
-                        </div>
-                        <div class="footer-column">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="#" onclick="loadHome()">Home</a></li>
-                                <li><a href="#" onclick="loadCategory('all')">All Products</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-column">
-                            <h4>Follow Us</h4>
-                            <div class="social-links">
-                                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <p>&copy; 2025 KOKI VFX & 3D. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
+            <!-- Right Slideshow -->
+            <div class="slideshow-container small-slideshow" id="rightSlideshow">
+              <div class="slide-small fade-small">
+                <img src="backgrounds/theme.jpg" alt="Right Slide 1">
+              </div>
+              <div class="slide-small fade-small">
+                <img src="backgrounds/IMG_2254.JPG" alt="Right Slide 2">
+              </div>
+              <div class="slide-small fade-small">
+                <img src="backgrounds/IMG_2256.JPG" alt="Right Slide 3">
+              </div>
+            </div>
+          </div>
         </div>
+      </main>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
+
+
+
+
+
+
